@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  text-align: center;
+  min-height: 100vh;
+  font-size: 24px;
+}
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+header{
+  margin-bottom: 20px;
+}
+
+header, footer{
+  background: #3055e1;
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: rebeccapurple;
+}
+
+.fav-jokes{
+  margin-left: 16px;
+}
+
+.container{
+  height: calc(100vh - 144px);
+  overflow-y: scroll;
+}
+button{
+  background: linear-gradient(269.01deg, #FFB15E 0%, #E68B25 52.81%, #EF9332 98.03%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.container-root, .show-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.show-btn-container{
+  width: fit-content;
+}
+
+.show-btn-container div, .show-btn-container button {
+  width: 100%;
+}
+.show-btn-container div{
+  margin: 8px;
+}
+
+.deleteElem{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+}
+
+.element-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 4px rgba(0 ,0 ,0 ,0.5);
+  padding: 8px;
+}
+
+.element-container img, .element-container button{
+  margin: 10px;
+}
+
+.jokes-container{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(485px, 1fr) );
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.del-all-jokes{
+  background: linear-gradient(269.01deg, #c21f1f 0%, #e65a25 52.81%, #ef3232 98.03%);
+  margin-top: 16px;
+}
+
